@@ -1,7 +1,8 @@
 body{
-    background-color:rgb(156, 239, 238);
+    background-image: repeating-linear-gradient(to left,rgb(41, 88, 97),rgb(221, 225, 227));
     padding:0px;
-    margin:0px;
+    margin:10px;
+    background-image:()
     
 }
 .nav-container{
@@ -9,31 +10,51 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 40px;
-    background-color:grey;
+    background-color:rgb(253, 251, 251);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
  
 }
+.opus-logo{
+    width: 90px;
+    padding:10px;
+    cursor: pointer;
 
-.logo{
-    font-family:"Roboto";
-    padding-left: 10px;
-    font-size: 20px;
 }
+
 
 .list-cont{
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    
 }
 
 .list-item{
-    padding-right: 10px;
+    padding: 8px;
+    text-align: center;
+    color:black;
+ 
 }
+
+.list-item:hover{
+    background-color: rgb(19, 227, 250);
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+  
+    
+}
+.anchor{
+    color:rgb(18, 3, 3);
+    text-decoration: none;
+    font-family:"calibri";
+    cursor:pointer;
+
+
+}
+
 .content-cont{
     margin-top:100px;
     
@@ -46,9 +67,22 @@ body{
     width: 80%;
     margin: 30px auto;
     padding: 10px;
-    background-color:rgba(255, 255, 255, 0.815);
+    background-color: rgba(255,255,255,0.815);
     border: 3px solid #73AD21;
     border-radius: 10px;
+}
+
+.home-class{
+    display: flex;
+    flex-direction: column;
+    animation: bounceIn 7s ease-in 
+}
+
+@keyframes bounceIn {
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 #about{
@@ -88,11 +122,48 @@ body{
 
 }
 .footer-div{
-    margin-top: 100px;
+    margin-top: 60px;
     display: flex;
     justify-content: space-around;
     
 }
 .foot{
     text-align: center;
+    padding-top:55px;
+font-weight:700;
 }
+
+.anchor2{
+    color:rgb(18, 3, 3);
+    text-decoration: none;
+    font-family:"calibri";
+    cursor:pointer;
+
+
+}
+.anchor2:hover{
+font-weight: bold;
+font-size: 20px; 
+transition:0.5s ease-out; 
+}
+
+.img-styling{
+    border-radius: 10px;
+    box-shadow: 4px 7px 10px #000000;
+}
+
+
+.slideshow {
+    width: 50%;
+    max-width: 800px;
+    margin: auto;
+    
+    display: flex;
+}
+
+.slideshow img {
+    width: 100%;
+    display: none;
+}
+
+
