@@ -5,28 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opus Spark</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="Scripts/jquery.cycle.js"></script>
+    <script type="text/javascript" src="Scripts/ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://kit.fontawesome.com/5156def407.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <header>
         <nav class="nav-container" >
-            <h1 class="logo">Opus Spark</h1>
+           
+                <a href="#sliding">
+                    <img src="logo.png"  alt="Opus Spark Logo" class="opus-logo"/>
+                </a>     
 
             <ul class="list-cont">
                 <li class="list-item">
-                    <a href="index.html" class="active" title="Opus Spark Home">Home</a>
+                    <a href="index.html" class="anchor"  title="Opus Spark Home">Home</a>
                 </li>
                 <li class="list-item">
-                    <a href="#about" title="About Opus Spark">About</a>
+                    <a href="#about" class="anchor" title="About Opus Spark">About</a>
                 </li>
                 <li class="list-item">
-                    <a href="#services" title="Opus Spark Services">Services</a>
+                    <a href="#services" class="anchor" title="Opus Spark Services">Services</a>
                 </li>
                 <li class="list-item">
-                    <a href="#career" title="Careers at Opus Spark">Career</a>
+                    <a href="#career" class="anchor" title="Careers at Opus Spark">Career</a>
                 </li>
                 <li class="list-item">
-                    <a href="#contact" title="Contact Opus Spark">Contact Us</a>
+                    <a href="#contact" class="anchor" title="Contact Opus Spark">Contact Us</a>
                 </li>
             </ul>
         </nav>
@@ -36,25 +45,53 @@
 
     <main>
         
- <div class="content-cont">       <section id = "home">
+ <div class="content-cont">  
+        <div>
+            <input type="search" placeholder="Search"/>
+        </div>
+        <section id = "sliding">
+            <h1>Versatile Choice of Platforms</h1>
+            <div class="slideshow">
+            <img src="web_dev.png"  class="img-styling"/>
+            <img src="app_dev.png" class="img-styling"/>
+            <img src="marketing-head.png" class="img-styling"/>
+            <img src="It-training.png" class="img-styling"/>
+            <img src="customer-support.png" class="img-styling"/>
+            
+        </div></section>
+
+<script>
+$(document).ready(function () {
+    let slides = $('.slideshow img');
+    let index = 0;
+
+    setInterval(function () {
+        slides.eq(index).fadeOut(500);
+        index = (index + 1) % slides.length;
+        slides.eq(index).fadeIn(500);
+    }, 3000);
+});
+</script>
+
+        <section id = "home" class="home-class">
              <h2>Home</h2>
              <p>Opus Spark is a software development company.</p>
         </section>
         
  <br>     
-        <section id = "about">
+        <section id = "about" class="home-class">
            <h2>About</h2>
            <p> Our purpose is to serve people with the creative, innovative and reliable solutions available in the industry. At Opus spark (Division of Adnaa Technologies Pvt.Ltd), We are team of professionals with a common dream of establishing a company that could provide quality service to people and achieve success through their satisfaction.</p>
            <p> Our team members are passionate about what we do and we love solving problems and providing solutions to overcome people's everyday issues. When our team receives a software development task rather than focusing on how it has to be done? we focus on why it has to be done? This enables us to understand the problem and solution in detail.</p>
         </section>
 <br>
-        <section id = "services">
+        <section id = "services" class="home-class">
             <h2>Services</h2>
             <p>Web Development</p>
             <p>Mobile Development</p>
         </section>
 <br>
-        <section id = "contact">
+        <section id = "contact" class="home-class">
             <h2>Contact</h2>
             <p>Opus Spark (Division of Adnaa Technologies Pvt.Ltd)<br>
                 19/1,Kingstone Park,(opp.Aruna Theatre),<br>
@@ -67,13 +104,32 @@
     </div>
 </main>
 
-<hr "border: 1px solid white">
+<hr>
     <footer>
         <div class="footer-div">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" class="anchor2">Home</a>
+            <a href="#about" class="anchor2">About</a>
+            <a href="#services" class="anchor2">Services</a>
+            <a href="#contact" class="anchor2">Contact</a>
+            
+        </div>
+        <div>
+            <h1>Follow Us on</h1>
+            <div>
+                <i class="fa-brands fa-instagram" style="color: #ff1ac2;"></i>
+                <a href="https://www.instagram.com" target =_blank>Instagram</a>
+            </div>
+            <br>
+           <div> 
+                <i class="fa-brands fa-facebook" style="color: #065df4;"></i>
+                <a href="https://www.facebook.com" target =_blank>Facebook</a>
+            </div> 
+           <br> 
+           <div>
+                <i class="fa-brands fa-x-twitter" style="color: #000000;"></i>
+                <a href="https://www.twitter.com" target =_blank>Twitter</a>
+            </div>
+            
         </div>
         <p class="foot">&copy 2025 Opus Spark. All rights reserved.</p>
     </footer>
