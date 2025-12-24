@@ -5,40 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opus Spark</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="Scripts/jquery.cycle.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
     <script type="text/javascript" src="Scripts/ui.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://kit.fontawesome.com/5156def407.js" crossorigin="anonymous"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
     <header>
-        <nav class="nav-container" >
-           
-                <a href="#sliding">
-                    <img src="logo.png"  alt="Opus Spark Logo" class="opus-logo"/>
-                </a>     
+        <div class="container">
+          <nav class="nav-container" >
+               <div> 
+                    <a href="index.html">
+                        <img src="logo.png"  alt="Opus Spark Logo" class="opus-logo"/>
+                    </a>
+               </div>  
 
             <ul class="list-cont">
-                <li class="list-item">
+                <li class="list-item" >
                     <a href="index.html" class="anchor"  title="Opus Spark Home">Home</a>
                 </li>
                 <li class="list-item">
-                    <a href="#about" class="anchor" title="About Opus Spark">About</a>
+                    <a href="about.html" class="anchor" title="About Opus Spark">About</a>
                 </li>
                 <li class="list-item">
-                    <a href="#services" class="anchor" title="Opus Spark Services">Services</a>
+                    <a href="services.html" class="anchor" title="Opus Spark Services">Services</a>
                 </li>
                 <li class="list-item">
-                    <a href="#career" class="anchor" title="Careers at Opus Spark">Career</a>
+                    <a href="career.html" class="anchor" title="Careers at Opus Spark">Career</a>
                 </li>
                 <li class="list-item">
-                    <a href="#contact" class="anchor" title="Contact Opus Spark">Contact Us</a>
+                    <a href="contact.html" class="anchor" title="Contact Opus Spark">Contact</a>
                 </li>
             </ul>
         </nav>
+        </div>
     </header>
     <br>
 
@@ -46,93 +54,104 @@
     <main>
         
  <div class="content-cont">  
-        <div>
-            <input type="search" placeholder="Search"/>
-        </div>
-        <section id = "sliding">
-            <h1>Versatile Choice of Platforms</h1>
-            <div class="slideshow">
-            <img src="web_dev.png"  class="img-styling"/>
-            <img src="app_dev.png" class="img-styling"/>
-            <img src="marketing-head.png" class="img-styling"/>
-            <img src="It-training.png" class="img-styling"/>
-            <img src="customer-support.png" class="img-styling"/>
-            
-        </div></section>
 
-<script>
-$(document).ready(function () {
-    let slides = $('.slideshow img');
-    let index = 0;
 
-    setInterval(function () {
-        slides.eq(index).fadeOut(500);
-        index = (index + 1) % slides.length;
-        slides.eq(index).fadeIn(500);
-    }, 3000);
-});
-</script>
+  <h1 class="page-title-heading">Home</h1>
 
-        <section id = "home" class="home-class">
-             <h2>Home</h2>
-             <p>Opus Spark is a software development company.</p>
-        </section>
-        
- <br>     
-        <section id = "about" class="home-class">
-           <h2>About</h2>
-           <p> Our purpose is to serve people with the creative, innovative and reliable solutions available in the industry. At Opus spark (Division of Adnaa Technologies Pvt.Ltd), We are team of professionals with a common dream of establishing a company that could provide quality service to people and achieve success through their satisfaction.</p>
-           <p> Our team members are passionate about what we do and we love solving problems and providing solutions to overcome people's everyday issues. When our team receives a software development task rather than focusing on how it has to be done? we focus on why it has to be done? This enables us to understand the problem and solution in detail.</p>
-        </section>
-<br>
-        <section id = "services" class="home-class">
-            <h2>Services</h2>
-            <p>Web Development</p>
-            <p>Mobile Development</p>
-        </section>
-<br>
-        <section id = "contact" class="home-class">
-            <h2>Contact</h2>
-            <p>Opus Spark (Division of Adnaa Technologies Pvt.Ltd)<br>
-                19/1,Kingstone Park,(opp.Aruna Theatre),<br>
-                Ramalinga nagar,Puthur High Road,<br>
-                Trichy-620 017,
-                Tamilnadu.
-            </p>
-            
-        </section>        
+<div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide slideshow" data-bs-ride="carousel">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="web_dev.png" class="d-block w-100 img-styling" alt="Web Development">
     </div>
-</main>
+    <div class="carousel-item">
+      <img src="app_dev.png" class="d-block w-100 img-styling" alt="App Development">
+    </div>
+    <div class="carousel-item">
+      <img src="marketing-head.png" class="d-block w-100 img-styling" alt="Marketing">
+    </div>
+    <div class="carousel-item">
+      <img src="It-training.png" class="d-block w-100 img-styling" alt="IT Training">
+    </div>
+    <div class="carousel-item">
+      <img src="customer-support.png" class="d-block w-100 img-styling" alt="Customer Support">
+    </div>
+  </div>
 
-<hr>
+  <button class="carousel-control-prev" type="button"
+          data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button"
+          data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+</div>
+<h3  style="color:blue; text-align:center; margin: 70px 5px 10px 5px;">following might reason your decision on us!</h3>
+<div>
+  <h4>Customizable</h4>
+  <p>We treat you as unique and we build a product thats completely customizable for your need. We know one suit doesnt fit for all. Whether its software, web or mobile development we see you as unique among the mass.</p>
+</div>
+<div>
+  <h4>24/7 Support</h4>
+  <p>Our Primary point of focus is post delivery support. We strive to maker sure the expectations, happiness, enthusiasm that you have on your dream work will also be kept alive through out the production process and ever after.</p>
+</div>
+<div>
+  <h4>Values</h4>
+  <p>Businesses built on values tend to last longer than those that are built on money. We value your realtionship. We understand you love your business as much as we love ours and we will make sure both of us acheive our values.</p>
+
+</main>
+    
+
+<hr>        
     <footer>
         <div class="footer-div">
-            <a href="#home" class="anchor2">Home</a>
-            <a href="#about" class="anchor2">About</a>
-            <a href="#services" class="anchor2">Services</a>
-            <a href="#contact" class="anchor2">Contact</a>
+            <a href="index.html" class="anchor2">Home</a>
+            <a href="about.html" class="anchor2">About</a>
+            <a href="services.html" class="anchor2">Services</a>
+            <a href="contact.html" class="anchor2">Contact</a>
             
         </div>
-        <div>
-            <h1>Follow Us on</h1>
+       
+            <h1 style="text-align:center; margin-top:50px;">Follow Us on</h1>
+            <div style="display:flex; justify-content: space-evenly;">
             <div>
                 <i class="fa-brands fa-instagram" style="color: #ff1ac2;"></i>
-                <a href="https://www.instagram.com" target =_blank>Instagram</a>
+                <a href="https://www.instagram.com" target =_blank draggable="true">Instagram</a>
             </div>
             <br>
            <div> 
                 <i class="fa-brands fa-facebook" style="color: #065df4;"></i>
-                <a href="https://www.facebook.com" target =_blank>Facebook</a>
+                <a href="https://www.facebook.com" target =_blank draggable="true">Facebook</a>
             </div> 
            <br> 
            <div>
                 <i class="fa-brands fa-x-twitter" style="color: #000000;"></i>
-                <a href="https://www.twitter.com" target =_blank>Twitter</a>
+                <a href="https://www.twitter.com" target =_blank draggable="true">Twitter</a>
             </div>
             
         </div>
         <p class="foot">&copy 2025 Opus Spark. All rights reserved.</p>
     </footer>
+
+
+    
+
+    
+
+
 
 </body>
 </html>
