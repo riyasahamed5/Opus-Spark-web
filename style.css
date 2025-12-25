@@ -51,6 +51,9 @@ body{
     .opus-logo{
         width:100px;
     }
+    .contact-icons{
+        font-size:12px;
+    }
 }
 
 .list-item:hover{
@@ -127,10 +130,12 @@ transition:0.5s ease-out;
 
 .contact-icons{
 display:flex; 
-flex-direction: column; 
+flex-direction: column;
 align-items:center; 
 margin:15px;
 font-size:18px;
+
+
 }
 .career-img{
     width:70%;
