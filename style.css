@@ -1,7 +1,7 @@
 body{
     background-color:white;
-    padding:20px;
-    margin:15px;
+    padding:10px;
+    margin:10px;
     
 }
 .nav-container{
@@ -9,7 +9,7 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 50px;
-     width: 100%;
+    width:100%;
     background-color:rgb(92, 89, 89);
     position: fixed;
     top: 0;
@@ -18,8 +18,8 @@ body{
  
 }
 .opus-logo{
-    width: 150px;
-    padding:0px 10px 0px 10px;
+    width: 130px;
+    padding:10px;
     cursor: pointer;
 
 }
@@ -30,11 +30,15 @@ body{
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    text-align: center;
 }
 
 .list-item{
     padding:5px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center
     
  
 }
@@ -43,7 +47,7 @@ body{
     background-color: rgb(19, 227, 250);
     color:black;
     border-radius: 5px;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
   
     
 }
@@ -53,78 +57,11 @@ body{
     font-family:"calibri";
     cursor:pointer;
 }
-.anchor:hover{
-    color:black;
-}
 
 
 .content-cont{
-    margin-top:25px;
+    margin-top:10px;
     
-}
-
-#home{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin: 30px auto;
-    padding: 10px;
-    background-color: rgba(255,255,255,0.815);
-    border: 3px solid #73AD21;
-    border-radius: 10px;
-}
-
-.home-class{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    animation: bounceIn 7s ease-in 
-}
-
-@keyframes bounceIn {
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-#about{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin: 30px auto;
-    padding: 10px;
-    background-color:rgba(255, 255, 255, 0.815);
-    border: 3px solid #73AD21;
-    border-radius: 10px;
-}
-#services{
-   display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin: 30px auto;
-    padding: 10px;
-    background-color:rgba(255, 255, 255, 0.815);
-    border: 3px solid #73AD21;
-    border-radius: 10px;
-
-}
-
-#contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin: 30px auto;
-    padding: 10px;
-    background-color:rgba(255, 255, 255, 0.815);
-    border: 3px solid #73AD21;
-    border-radius: 10px;
-
 }
 
 
@@ -169,7 +106,6 @@ transition:0.5s ease-out;
 
 
 
-
 .page-title-heading{
     background-color:black;
     color:white; 
@@ -192,5 +128,19 @@ font-size:18px;
     display:block;
     border-radius: 25px;
     border: 1px solid black;
+
+}
+.submit-btn{
+    color:black;
+    background-color:rgb(19, 227, 250);
+    border:2px solid black;
+    padding:10px;
+    border-radius:10px;
+
+}
+.submit-btn:hover{
+    background-color:black;
+    color:white;
+    border:2px solid black;
 
 }
