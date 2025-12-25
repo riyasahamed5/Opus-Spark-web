@@ -1,7 +1,7 @@
 body{
     background-color:white;
     padding:10px;
-    margin:10px;
+    margin:20px;
     
 }
 .nav-container{
@@ -38,9 +38,19 @@ body{
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    font-size: 13px;
     
  
+}
+
+@media screen and (max-width:600px){
+    .list-item{
+        font-size:12px;
+    }
+    .opus-logo{
+        width:100px;
+    }
 }
 
 .list-item:hover{
