@@ -38,6 +38,7 @@ body{
 
 .list-item{
     padding:5px;
+    margin-right:5px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -83,6 +84,14 @@ body{
     cursor:pointer;
 }
 
+.container-overall{
+    background-image: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExam5sMmg3M2pzcnE0ZGVkNjM5NTdoc2tibzBxbXF5YTRwaHFpbHh6cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3otO6NFBIAFg2vPZuM/giphy.gif");
+    margin-top:15px;
+    background-size: cover;
+    border-radius:10px;
+    padding:15px 12px 10px 12px;
+
+}
 
 .content-cont{
     margin-top:10px;
