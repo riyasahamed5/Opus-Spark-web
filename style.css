@@ -14,6 +14,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 9999;
    
  
 }
@@ -31,7 +32,9 @@ body{
     align-items: center;
     list-style: none;
     text-align: center;
+    
 }
+
 
 .list-item{
     padding:5px;
@@ -39,12 +42,28 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 13px;
+    font-size: 15px;
     
- 
 }
 
-@media screen and (max-width:600px){
+
+.list-item:hover{
+    background-color: rgb(19, 227, 250);
+    color:black;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+  
+    
+}
+
+
+.list-item.active{
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width:500px){
     .list-item{
         font-size:12px;
     }
@@ -56,14 +75,7 @@ body{
     }
 }
 
-.list-item:hover{
-    background-color: rgb(19, 227, 250);
-    color:black;
-    border-radius: 5px;
-    transition: 0.5s ease-in-out;
-  
-    
-}
+
 .anchor{
     color:white;
     text-decoration: none;
